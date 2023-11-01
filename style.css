@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+
+nav{
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 12px 0;
+    font-size: 28px;
+    background-color: #4ecdc4;
+}
+
+nav ul{
+    display: flex;}
+
+nav ul li{
+    list-style: none;
+    margin: 0 25px;
+}
+
+nav li a{
+    text-decoration: none; 
+    color: black;
+}
+
+nav li a:hover{
+    border: 2px solid white;
+    padding: 10px 0;    
+}
+
+.logo{
+    font-size: 28px;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.logo:hover{
+    color: rgb(134, 121, 121);
+}
+
+.container{
+    margin-top: 10px;
+    background-color: #f7fff7;
+    min-height: 80vh;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: red;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;    
+    margin: 10px 15px
+}
+
+lab
+
+form,select, input[type="number"]{
+    font-size: 20px;
+    margin-bottom: 10px ;
+    width: 40vw;
+}
+
+#value{
+    padding: 2px;
+}
+
+.btn{
+    width: 90px;
+    height: 35px;
+    padding: 3px;
+    font-size: 20px;
+    background-color: #a86ccb;
+    cursor: pointer;
+    margin: 5px 15px;
+}
+
+.btn:hover{
+    border: 3px solid black;
+}
+
+.button-container{
+    margin: 15px 0;
+}
+
+table{
+    position: relative;
+    left: 20%;
+    border: 2px solid black;
+    width: 50%;
+    text-align: center;
+}
+
+tr{ 
+    font-size: 22px;
+}
+
+th, td{
+    border: 2px solid black;
+}
+
+caption{
+    margin-bottom: 5px;
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(24, 24, 214);
+}
+
+.output{
+    display: none;
+}
+
+footer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 600px) {
+            
+
+    nav {
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    nav ul li {
+        margin: 5px 13px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 95vw;
+    }
+
+    .container form input[type='number'],
+    select,
+    label {
+        width: 80vw;
+    }
+}
+
+footer {
+    font-size: 18px;
+    text-align: center;
+}
