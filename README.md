@@ -1,1 +1,1 @@
-# Currency Covertor with real time exchange rates.
+# Currency Convertor with real time exchange rates.
