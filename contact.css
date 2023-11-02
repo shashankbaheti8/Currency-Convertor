@@ -56,10 +56,30 @@ h2{
     flex-direction: column;
 }
 
+.link ul {
+    list-style: disc;
+    padding-left: 1%;
+}
+
 .link a{
     margin: 5px;
     text-decoration: none;
     font-size: 24px;
+}
+
+.link a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    color: #eac557;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
 }
 
 
@@ -93,6 +113,7 @@ h2{
         font-size: 18px;
     }
 }
+
 
 @media (max-width: 350px){
     nav ul {

@@ -74,6 +74,17 @@ h1{
 }
 
 
+footer{
+    color: #eac557;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+
 /* Responsiveness */
 @media (max-width: 700px) {
             
