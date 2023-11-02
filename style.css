@@ -14,6 +14,7 @@ nav{
     align-items: center;
     padding: 12px 0;
     background-color: #4ecdc4;
+    min-width: 100%;
 }
 
 nav ul{
@@ -46,8 +47,9 @@ nav li a:hover{
 }
 
 .container{
-    margin-top: 10px;
-    background-color: #f7fff7;
+    max-width: 100vw;
+    padding-top: 10px;
+    background-color: #91a691;
     min-height: 100%;
     font-family: 'Roboto Slab', serif;
 }
@@ -62,7 +64,7 @@ form{
     display: flex;
     flex-direction: column;
     font-size: 24px;    
-    margin: 10px 15px
+    margin-left: 15px;
 }
 
 form,select, input[type="number"]{
@@ -128,9 +130,8 @@ footer{
     font-weight: 600;
 }
 
-
-
-@media (max-width: 600px) {
+/* Responsiveness */
+@media (max-width: 700px) {
             
 
     nav {
@@ -139,15 +140,11 @@ footer{
     }
 
     nav ul li {
-        margin: 5px 13px;
+        margin: 5px 10px;
     }
 
     nav ul {
         justify-content: center;
-    }
-
-    .container {
-        max-width: 95vw;
     }
 
     .container form input[type='number'],
@@ -159,5 +156,30 @@ footer{
     footer {
         font-size: 18px;
         text-align: center;
+    }
+
+    table{
+        left: 5%;
+    }
+
+    tr{ 
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 350px){
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    table{
+        left: 0;
+        width: 10%;
+    }
+
+    tr{ 
+        font-size: 14px;
     }
 }

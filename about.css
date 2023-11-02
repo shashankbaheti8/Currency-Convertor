@@ -72,3 +72,52 @@ h1{
 .use ul li a:hover{
     color: blue;
 }
+
+
+/* Responsiveness */
+@media (max-width: 700px) {
+            
+
+    nav {
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+    
+    footer {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    table{
+        left: 5%;
+    }
+
+    tr{ 
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 350px){
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    table{
+        left: 0;
+        width: 10%;
+    }
+
+    tr{ 
+        font-size: 14px;
+    }
+}
