@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="about.css"/>
+    <link rel="icon" type="image/x-icon" href="favi.png">
+
+  </head>
+  <body>
+    <nav>
+      <div class="logo">CurrConv</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+        <h1>About this website</h1>
+        <div class="intro">
+            <h2>Introduction</h2>
+            <p>This website basically converts the amount entered in the input field in every currency by choosing the base currency.</p>
+            <p>Like if you wish to convert 50 dollars then you enter the amount 50 in the amount field and select USD as your base currency.</p>    
+        </div>
+
+        <div class="use">
+            <h2>Usage</h2>
+            <ul class="list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>API (<a href="https://app.currencyapi.com/">Link</a>)</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+      const logo = document.querySelector(".logo");
+      logo.addEventListener("click", () => {
+        location.reload();
+      });
+    </script>
+  </body>
+</html>

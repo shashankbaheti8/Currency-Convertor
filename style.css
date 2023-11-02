@@ -10,18 +10,20 @@ nav{
     font-weight: 600;
     display: flex;
     justify-content: space-evenly;
+    column-gap: 25%;
     align-items: center;
     padding: 12px 0;
-    font-size: 28px;
     background-color: #4ecdc4;
 }
 
 nav ul{
-    display: flex;}
+    display: flex;
+}
 
 nav ul li{
     list-style: none;
     margin: 0 25px;
+    font-size: 28px;
 }
 
 nav li a{
@@ -30,8 +32,7 @@ nav li a{
 }
 
 nav li a:hover{
-    border: 2px solid white;
-    padding: 10px 0;    
+    color: rgb(134, 121, 121);
 }
 
 .logo{
@@ -47,7 +48,7 @@ nav li a:hover{
 .container{
     margin-top: 10px;
     background-color: #f7fff7;
-    min-height: 80vh;
+    min-height: 100%;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -63,8 +64,6 @@ form{
     font-size: 24px;    
     margin: 10px 15px
 }
-
-lab
 
 form,select, input[type="number"]{
     font-size: 20px;
@@ -96,7 +95,7 @@ form,select, input[type="number"]{
 
 table{
     position: relative;
-    left: 20%;
+    left: 25%;
     border: 2px solid black;
     width: 50%;
     text-align: center;
@@ -122,10 +121,9 @@ caption{
 }
 
 footer{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: #eac557;
+    margin: 20px 0;
+    text-align: center;
     font-size: 24px;
     font-weight: 600;
 }
@@ -157,9 +155,9 @@ footer{
     label {
         width: 80vw;
     }
-}
-
-footer {
-    font-size: 18px;
-    text-align: center;
+    
+    footer {
+        font-size: 18px;
+        text-align: center;
+    }
 }

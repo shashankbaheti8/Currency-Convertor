@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="favi.png">
     <link
       href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
@@ -20,22 +21,23 @@
     <nav>
       <div class="logo">CurrConv</div> 
       <ul>
-        <li><a href="/home">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
     <div class="container">
       <h1>Currency Convertor</h1>
-      <form method="get">
+      <form action="#" method="get">
         <label for="value">Enter the Amount</label>
-        <input type="number" id="value" required>
+        <input type="number" id="value" required/>
         <label name="currency">Choose Base Currency</label>
         <select id="currency" name="currency">
           <option value="INR">Indian Rupee</option>
           <option value="USD">US Dollar</option>
           <option value="EUR">Europe</option>
+          <option value="GBP">Pound Sterling</option>
         </select>
 
         <div class="button-container">
@@ -50,7 +52,6 @@
           <thead>
             <tr>
               <th>Currency</th>
-              <th>Currency Code</th>
               <th>Amount</th>
             </tr>
           </thead>
