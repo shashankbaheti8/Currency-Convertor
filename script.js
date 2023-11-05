@@ -26,6 +26,6 @@ const btn = document.querySelector(".btn")
 btn.addEventListener("click", (e) => {
     e.preventDefault();
     const value = parseInt(document.querySelector("input[id='value']").value);
-    const currency = document.querySelector("select[name='currency']").value;
+    const currency = document.querySelector("input[id='currency']").value;
     populate(value, currency)
 })

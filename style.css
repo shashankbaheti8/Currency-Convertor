@@ -67,7 +67,7 @@ form{
     margin-left: 15px;
 }
 
-form,select, input[type="number"]{
+form,select, input[type="number"], input[type="text"]{
     font-size: 20px;
     margin-bottom: 10px ;
     width: 40vw;
@@ -148,7 +148,7 @@ footer{
     }
 
     .container form input[type='number'],
-    select,
+    input[type="text"],
     label {
         width: 80vw;
     }
@@ -171,6 +171,8 @@ footer{
     nav ul {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 30%;
     }
 
