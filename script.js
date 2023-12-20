@@ -3,6 +3,14 @@ logo.addEventListener("click", ()=>{
     location.reload();
 })
 
+const btn = document.querySelector(".btn")
+btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const value = parseInt(document.querySelector("input[id='value']").value);
+    const currency = document.querySelector("input[id='currency']").value;
+    populate(value, currency)
+})
+
 const populate = async (value, currency) => {
     let myStr = "";
     let url = "https://api.currencyapi.com/v3/latest?apikey=cur_live_XAWsZICRBRLh7K9UxuK05TdWOpRSKG20ckTuV2Nl&base_currency=" + currency
@@ -22,10 +30,3 @@ const populate = async (value, currency) => {
     table.innerHTML = myStr;
 }
 
-const btn = document.querySelector(".btn")
-btn.addEventListener("click", (e) => {
-    e.preventDefault();
-    const value = parseInt(document.querySelector("input[id='value']").value);
-    const currency = document.querySelector("input[id='currency']").value;
-    populate(value, currency)
-})
